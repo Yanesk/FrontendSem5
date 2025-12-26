@@ -252,25 +252,28 @@ h4 {
     text-align: center;
     padding-bottom: 35px;
 }
-
 .contact-us__wrapper {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.contacts {
     font-size: 2.0rem;
-    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-us__wrapper li {
+.contacts li {
     list-style: none;
     line-height: 50px;
 }
 
-.contact-us__wrapper a{
+.contacts a{
     color: #636060;
 }
-.contact-us__wrapper a:hover{
+.contacts a:hover{
     color: #886085;
 }
 
