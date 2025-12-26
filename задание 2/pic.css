@@ -1,0 +1,304 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    min-height: calc(100vh - 220px);
+}
+
+.navigation, p, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.color_main {
+    color: #609e36;
+}
+
+.color_text {
+    color: #636060;
+}
+
+.color_bright {
+    color: #886085;
+}
+
+.color_additional {
+    color: #717171;
+}
+
+.color_bcg {
+    background-color: #EDF2EC;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 21px;
+    padding-left: 5px;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #886085;
+}
+
+.wrapper {
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header*/
+
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+.leaf {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #609e36;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.leaf1 {
+    border-radius: 0 10px 10px 10px; 
+}
+.leaf2 {
+    border-radius: 10px 0 10px 10px;
+    left: 8px; 
+}
+.leaf3 {
+    border-radius: 10px 10px 0 10px;
+    left: 8px;
+    top: 8px;
+     
+}
+.leaf4 {
+    border-radius: 10px 10px 10px 0;
+    top: 8px;
+}
+
+.stick {
+    position: absolute;
+
+    border-right: 1px solid #609e36;
+    border-radius: 10px;
+    width: 20px;
+    height: 18px;
+    top: 17px;
+    left: -7px;
+
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+    padding-left: 47px;
+}
+.navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+    color: #717171;
+}
+
+
+
+.task{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.content {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top left, rgb(162, 190, 241), rgb(255, 253, 231));
+}
+
+.content * {
+    box-sizing: content-box;
+
+}
+.sun {
+    
+    background: #fbf79c;
+    width: 45px;
+    height: 45px;
+    margin-left: -7px;
+    margin-top: -7px;
+    border-radius: 50%;
+    
+}
+
+
+.container_archs {
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    width: 57px;
+    height: 148px;
+
+    border-radius: 100% / 50%;
+    border: 7px solid #9b9e9d;
+    border-bottom: 0;
+    border-top: 10px solid #9b9e9d;
+}
+
+
+.container_archs::before, .container_archs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 57px;
+    height: 148px;
+
+    border-radius: 100% / 50%;
+    border: 7px solid #9b9e9d;
+    border-bottom: 0;
+    border-top: 10px solid #9b9e9d;
+}
+
+.container_archs::before {
+    left: -72px;
+}
+
+.container_archs::after {
+    right: -72px;
+}
+
+
+/* ship*/
+
+.container_ship {
+    position: absolute;
+    left: 60px;
+    margin-top: 10px;  
+}
+
+.ship_up {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px; 
+    margin-top: 5px;;
+}
+
+
+.flag_small {
+    position:absolute;
+    top: -7px;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #cf2446;
+    border-bottom: 8px solid transparent;
+}
+
+.ship_mid {
+    display: flex;
+    width: 60px;
+}
+
+.ship_pole {
+    width: 5px;
+    height: 80px;
+    background-color: #99662c;
+}
+
+.flag_big {
+    border-top: 40px solid transparent;
+    border-left: 35px solid #8ae8f0;
+    border-bottom: 40px solid transparent;
+}
+
+.ship_main {
+    width: 60px;
+    border-top: 30px solid #845523;
+    border-left: 20px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+/*waves*/
+
+.container_waves { 
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.wave {
+    position: absolute;
+    background: linear-gradient(to left, rgb(114,160,244), 40%, rgb(194, 217, 248));
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.wave1 {
+    left: -10px;
+    bottom: -20px;
+}
+
+.wave2 {
+    left: 40px;
+    bottom: -12px;
+}
+
+.wave3 {
+    left: 90px;
+    bottom: -30px;
+}
+
+.wave4 {   
+    left: 150px;
+    bottom: -7px;
+}
+
+.footer__wrapper {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+
+}

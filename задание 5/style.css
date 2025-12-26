@@ -1,0 +1,238 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navigation, p, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.color_main {
+    color: #609e36;
+}
+
+.color_text {
+    color: #636060;
+}
+
+.color_bright {
+    color: #886085;
+}
+
+.color_additional {
+    color: #717171;
+}
+
+.color_bcg {
+    background-color: #EDF2EC;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.wrapper {
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header*/
+
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+.leaf {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #609e36;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.leaf1 {
+    border-radius: 0 10px 10px 10px; 
+}
+.leaf2 {
+    border-radius: 10px 0 10px 10px;
+    left: 8px; 
+}
+.leaf3 {
+    border-radius: 10px 10px 0 10px;
+    left: 8px;
+    top: 8px;
+     
+}
+.leaf4 {
+    border-radius: 10px 10px 10px 0;
+    top: 8px;
+}
+
+.stick {
+    position: absolute;
+    border: solid 1px transparent;
+    border-right: 1px solid #609e36;
+    border-radius: 10px;
+    width: 20px;
+    height: 18px;
+    top: 17px;
+    left: -7px;
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+    padding-left: 47px;
+}
+.navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+    color: #717171;
+}
+
+ 
+
+.puzzle {
+  position: relative;
+  width: 1440px;
+  max-width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.frame {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  width: 600px;
+  height: 500px;
+
+  border: 7px solid #886085;
+  box-sizing: border-box;
+
+
+  top: 150px;
+  left: 420px;
+}
+
+#puzzle-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #555;
+}
+
+.pic {
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.head {
+  width: 250px;
+  top: 500px;
+  left: 1000px;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.body {
+  width: 150px;
+  top: 230px;
+  left: 250px;
+  z-index: 2;
+}
+
+.paw {
+  width: 75px;
+  top: 550px;
+  left: 250px;
+  transform: rotate(270deg);
+}
+
+.tail {
+  width: 70px;
+  top: 50px;
+  left: 700px;
+}
+
+.leash {
+  width: 350px;
+  top: 50px;
+  left: 1000px;
+}
+
+.choker {
+  width: 130px;
+  top: 30px;
+  left: 300px;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+.footer__wrapper {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem; 
+
+}
+
+.spin {
+  animation: wobble 1.2s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-10deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+

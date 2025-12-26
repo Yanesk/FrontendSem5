@@ -1,0 +1,175 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.navigation, p, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.color_main {
+    color: #609e36;
+}
+
+.color_text {
+    color: #636060;
+}
+
+.color_bright {
+    color: #886085;
+}
+
+.color_additional {
+    color: #717171;
+}
+
+.color_bcg {
+    background-color: #EDF2EC;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-left: 5px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #886085;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header*/
+
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+.leaf {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #609e36;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.leaf1 {
+    border-radius: 0 10px 10px 10px; 
+}
+.leaf2 {
+    border-radius: 10px 0 10px 10px;
+    left: 8px; 
+}
+.leaf3 {
+    border-radius: 10px 10px 0 10px;
+    left: 8px;
+    top: 8px;
+     
+}
+.leaf4 {
+    border-radius: 10px 10px 10px 0;
+    top: 8px;
+}
+
+.stick1 {
+    position: absolute;
+    border: solid 1px transparent;
+    border-right: 1px solid #609e36;
+    border-radius: 10px;
+    width: 20px;
+    height: 18px;
+    top: 17px;
+    left: -7px;
+
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+    padding-left: 47px;
+}
+.navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+    color: #717171;
+}
+
+
+.content__wrapper {
+    min-height: calc(100vh - 220px);
+}
+
+
+.class1 {
+  background-color: #c9b2db;
+}
+
+.class2 {
+  background-color: #d19d84;
+}
+
+.task{
+  padding-bottom: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+}
+
+
+
+#rand p {
+  padding: 6px 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+}
+
+.footer__wrapper {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem; 
+
+}

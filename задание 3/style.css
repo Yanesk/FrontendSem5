@@ -1,0 +1,302 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    min-height: calc(100vh - 291px);
+}
+
+.navigation, p, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.color_main {
+    color: #609e36;
+}
+
+.color_text {
+    color: #636060;
+}
+
+.color_bright {
+    color: #886085;
+}
+
+.color_additional {
+    color: #717171;
+}
+
+.color_bcg {
+    background-color: #EDF2EC;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #886085;
+}
+
+.wrapper {
+
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header*/
+
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+.leaf {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #609e36;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.leaf1 {
+    border-radius: 0 10px 10px 10px; 
+}
+.leaf2 {
+    border-radius: 10px 0 10px 10px;
+    left: 8px; 
+}
+.leaf3 {
+    border-radius: 10px 10px 0 10px;
+    left: 8px;
+    top: 8px;
+     
+}
+.leaf4 {
+    border-radius: 10px 10px 10px 0;
+    top: 8px;
+}
+
+.stick1 {
+    position: absolute;
+    border: solid 1px transparent;
+    border-right: 1px solid #609e36;
+    border-radius: 10px;
+    width: 20px;
+    height: 18px;
+    top: 17px;
+    left: -7px;
+
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+    padding-left: 47px;
+}
+.navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+    color: #717171;
+}
+
+
+.task{
+  padding: 30px 0 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.flex_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.shelf {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.boy {
+    width: 90px;
+}
+
+
+.text1 {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    z-index: 2;
+
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.boy_right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    transform: translateX(-120%); 
+    opacity: 0;
+
+    transition: transform 0.9s ease-out;
+}
+
+.boy_toy {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0;             
+}
+
+
+.toy {
+    position: absolute;
+    top: 5px;
+    left: -30px;
+     
+}
+
+.stick {
+    width: 40px;
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    z-index: 2;
+}
+
+.fan {
+    position: absolute;
+    width: 66px;
+    z-index: 3;
+}
+
+.text2 {
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    transform: rotate(-30deg);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(60, 231, 60);
+    z-index: 3;
+    opacity: 0;  
+    transition: opacity 0.2s;
+}
+
+/* hover */
+
+.flex_wrapper:hover .boy_right {
+    transform: translateX(120%);
+    opacity: 1;
+}
+
+.flex_wrapper:hover .text1 {
+    opacity: 1;
+}
+
+/* active*/
+
+.flex_wrapper:active .boy_right, .flex_wrapper:active .text1 {
+    opacity: 0;
+}
+
+.flex_wrapper:active .boy_toy, .flex_wrapper:active .text2 {
+    opacity: 1;
+}
+
+
+.flex_wrapper:active {
+    filter: sepia(100%);
+    transition: filter 1s;
+}
+
+@keyframes fan-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+}
+
+
+.flex_wrapper:active .fan {
+    animation: fan-spin 0.5s linear infinite;
+}
+
+
+.footer__wrapper {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem; 
+
+}

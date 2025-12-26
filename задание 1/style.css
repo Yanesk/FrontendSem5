@@ -1,0 +1,352 @@
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navigation, p, h4, h3, h2, h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #010201;
+}
+
+.color_main {
+    color: #609e36;
+}
+
+.color_text {
+    color: #636060;
+}
+
+.color_bright {
+    color: #886085;
+}
+
+.color_additional {
+    color: #717171;
+}
+
+.color_bcg {
+    background-color: #EDF2EC;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 50px;
+}
+
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 52px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 24px;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header*/
+
+.header {
+    position: sticky;
+    top: 0;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_pic {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+.leaf {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #609e36;
+    position: absolute;
+    transform: rotate(25deg);
+}
+.leaf1 {
+    border-radius: 0 10px 10px 10px; 
+}
+.leaf2 {
+    border-radius: 10px 0 10px 10px;
+    left: 8px; 
+}
+.leaf3 {
+    border-radius: 10px 10px 0 10px;
+    left: 8px;
+    top: 8px;
+     
+}
+.leaf4 {
+    border-radius: 10px 10px 10px 0;
+    top: 8px;
+}
+
+.stick {
+    position: absolute;
+
+    border-right: 1px solid #609e36;
+    border-radius: 10px;
+    width: 20px;
+    height: 18px;
+    top: 17px;
+    left: -7px;
+
+}
+
+
+.navigation {
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+    padding-left: 40px;
+}
+.navigation a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+    color: #717171;
+}
+
+/* welcome*/
+
+.welcome__wrapper {
+    display: flex;
+    padding-top: 52px;
+}
+
+.welcome__img {
+    max-width: 60%;
+}
+
+.welcome__content {
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.welcome__text {
+    margin: 44px 0 47px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 35px;
+    max-width: 525.44px;
+}
+
+/*about */
+
+.about__wrapper {
+    display: flex;
+    padding-top: 90px;
+
+}
+
+.about__content {
+    padding-top: 150px;
+    padding-left: 70px;
+}
+
+.about__text {
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.about__img {
+    max-width: 50%;
+}
+
+/*service */
+
+.service__wrapper {
+    padding: 40px 0;
+}
+
+.service__header {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.service__text {
+  
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.service__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.service__card {
+    margin-top: 55px;
+    max-width: 330px;
+    transition: 0.5s;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #E3E1D5;
+}
+
+.service__card:hover {
+    transform: scale(1.1);
+}
+
+.service__img {
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+}
+
+.card_text {
+    margin: 7px 0 12px;
+    padding-top: 5px;
+    max-width: 330px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.contact-us__wrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0rem;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us__wrapper li {
+    list-style: none;
+    line-height: 50px;
+}
+
+.contact-us__wrapper a{
+    color: #636060;
+}
+.contact-us__wrapper a:hover{
+    color: #886085;
+}
+
+
+.footer__wrapper {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem; 
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+
+
+    h2 {
+        font-size: 3.8rem;
+        line-height: 44px;
+    }
+
+    h3 {
+        font-size: 3.4rem;
+        line-height: 44px;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+
+    .welcome__text, .about__text, .service__text {
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+ 
+
+    .welcome__img {
+        max-width: 50%;
+    }
+
+    .about__img {
+        max-width: 40%;
+    }
+
+    .service__img {
+        max-width: 100%;
+    }
+
+    .service__card {
+        max-width: 250px;
+    }
+
+
+    .wrapper {
+        padding: 20px;
+    }
+
+
+    .header__wrapper {
+        padding: 10px 20px;
+
+    }
+
+
+    .welcome__content {
+        margin-left: 40px;
+    }
+
+
+    .about__content {
+        padding-left: 40px;
+        padding-top: 80px;
+    }
+
+
+}

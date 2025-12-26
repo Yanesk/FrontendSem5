@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 4</title>
+</head>
+<body>
+    <header class="header color_bcg">
+        <div class="wrapper header__wrapper ">
+            <div class="logo">
+                <div class="logo_pic">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="leaf leaf4"></div>
+                    <div class="stick1"></div>
+                </div>
+                <h1 class="color_text">Вариант 2</h1>
+
+            </div>
+                
+            <nav>
+                <ul class="navigation">
+                    <li><a href="../задание 1/index.html" >Задание 1</a></li>
+                    <li><a href="../задание 2/practice2.html" >Задание 2</a></li>
+                    <li><a href="../задание 3/practice3.html">Задание 3</a></li>
+                    <li><a href="./practice4.html" class="color_bright">Задание 4</a></li>
+                    <li><a href="../задание 5/practice5.html">Задание 5</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    </header>
+
+    <div class="content__wrapper wrapper" >
+        <div class="task">
+            <h2>Задание</h2>
+            <p>Существует 2 массива: латинских высказываний и их переводов, можете добавить свои.</p>
+            <ul>
+                <li>"Consuetudo est altera natura"    "Привычка - вторая натура"</li>
+                <li>"Nota bene"    "Заметьте хорошо!"</li>
+                <li>"Nulla calamitas sola"   "Беда не приходит одна"</li>
+                <li>"Per aspera ad astra"   "Через тернии к звёздам"</li>
+            </ul>
+            <p>Создайте два класса class1 и class2. В них задайте два разных цвета фона.  При каждом четном нажатии на кнопку выводится фраза с применением класса class1, при нечетном class2.</p>
+            <p>Фразы выводятся в случайном, не повторяющемся порядке. Когда фразы заканчиваются, то выводится alert с фразой "Фразы закончились".</p>
+            <p>По нажатию на кнопку  "Перекрасить" у всех четных строк изменяется начертание на полужирное.</p>
+            <h2>Задание 2</h2>
+            <p>На странице  в части content создать тег  &lt;div id='rand'&gt;. </p>
+            <p>По нажатию на кнопку  "Создать"  в этом тэге создается тег &lt;p&gt;. Каждый, вновь созданный элемент, имеет свой нумерованный id. Номер фразы выводится подчеркнутым, латинский - курсив, русский - обычный. </p>
+        </div>
+        <div class="content" id="content">
+            <button id="createBtn" type="button">Создать</button>
+            <button id="recolorBtn" type="button">Перекрасить</button>
+            <div id='rand'></div>
+        </div>
+         
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">    
+
+            <p>Ксения Лебедева</p> 
+            <p>группа з5130903/30301</p> 
+            <p>2025</p> 
+                
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
