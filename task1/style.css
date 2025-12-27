@@ -128,7 +128,7 @@ h4 {
 
 .stick {
     position: absolute;
-
+    border: solid 1px transparent;
     border-right: 1px solid #609e36;
     border-radius: 10px;
     width: 20px;
