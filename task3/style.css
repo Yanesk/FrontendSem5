@@ -124,7 +124,6 @@ h2 {
 
 }
 
-
 .navigation {
     display: flex;
 }
@@ -155,68 +154,58 @@ h2 {
 
 }
 
-.flex_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
+.flex_wrapper{
+  display:flex;         
+  justify-content: center;
+  align-items: flex-end;        
+  width:200px;
+  height:200px;
+  overflow:hidden;
+  position:relative;
+  padding-right: 75px;
 }
+
 
 .shelf {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     z-index: 1;
 }
 
 .boy {
     width: 90px;
+    display: block;
 }
 
 
+
+.text1, .text2, .boy_right, .boy_toy{
+  opacity: 0;
+  pointer-events: none; 
+}
+
 .text1 {
-    position: absolute;
-    bottom: 5px;
-    left: 15px;
     z-index: 2;
-
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: white;
-
-    opacity: 0;
     transition: opacity 1s;
+    white-space: nowrap;       
 }
 
 .boy_right {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     z-index: 2;
-
-    transform: translateX(-120%); 
-    opacity: 0;
-
     transition: transform 0.9s ease-out;
 }
 
 .boy_toy {
-    position: absolute;
-    bottom: 0;
-    left: 110px;
+
     z-index: 3;
-
-    display: flex;
-    align-items: center;
-
-    opacity: 0;             
+    opacity: 0;
+    position: relative;
+    padding: 0;         
 }
 
 
@@ -258,12 +247,13 @@ h2 {
 /* hover */
 
 .flex_wrapper:hover .boy_right {
-    transform: translateX(120%);
+    transform: translateX(200%);
     opacity: 1;
 }
 
 .flex_wrapper:hover .text1 {
     opacity: 1;
+
 }
 
 /* active*/
